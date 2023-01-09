@@ -1,14 +1,12 @@
 {
-  "name": "Whedon API",
-  "description": "The Whedon Bot for interacting with reviewers on JOSS, JOSE and other journals",
+  "name": "Medoc API",
+  "description": "The Medoc Bot for interacting with reviewers on MED-Portal",
   "keywords": [
-    "Whedon",
-    "JOSS",
-    "Open Journals",
+    "Medoc",
     "bots"
   ],
-  "website": "http://openjournals.org",
-  "repository": "https://github.com/openjournals/whedon-api/tree/master",
+  "website": "",
+  "repository": "https://github.com/MED-Portal/medod-api/tree/master",
   "success_url": "/heartbeat",
   "scripts": {
   },
