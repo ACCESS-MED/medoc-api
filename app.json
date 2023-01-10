@@ -6,7 +6,7 @@
     "bots"
   ],
   "website": "",
-  "repository": "https://github.com/MED-Portal/medod-api/tree/master",
+  "repository": "https://github.com/ACCESS-MED/medoc-api/tree/master",
   "success_url": "/heartbeat",
   "scripts": {
   },
