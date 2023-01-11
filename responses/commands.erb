@@ -1,38 +1,38 @@
 Here are some things you can ask me to do:
 
 ```
-# List all of Whedon's capabilities
-@whedon commands
+# List all of Medoc's capabilities
+@med-oc commands
 
 # Assign a GitHub user as the sole reviewer of this submission
-@whedon assign @username as reviewer
+@med-oc assign @username as reviewer
 
 # Add a GitHub user to the reviewers of this submission
-@whedon add @username as reviewer
+@med-oc add @username as reviewer
 
 # Re-invite a reviewer (if they can't update checklists)
-@whedon re-invite @username as reviewer
+@med-oc re-invite @username as reviewer
 
 # Remove a GitHub user from the reviewers of this submission
-@whedon remove @username as reviewer
+@med-oc remove @username as reviewer
 
 # List of editor GitHub usernames
-@whedon list editors
+@med-oc list editors
 
 # List of reviewers together with programming language preferences and domain expertise
-@whedon list reviewers
+@med-oc list reviewers
 
 # Change editorial assignment
-@whedon assign @username as editor
+@med-oc assign @username as editor
 
 # Set the software archive DOI at the top of the issue e.g.
-@whedon set 10.0000/zenodo.00000 as archive
+@med-oc set 10.0000/zenodo.00000 as archive
 
 # Set the software version at the top of the issue e.g.
-@whedon set v1.0.1 as version
+@med-oc set v1.0.1 as version
 
 # Open the review issue
-@whedon start review
+@med-oc start review
 
 EDITORIAL TASKS
 
@@ -41,36 +41,36 @@ EDITORIAL TASKS
 # For example:
 
 # Compile the paper
-@whedon generate pdf
+@med-oc generate pdf
 
 # Compile the paper from alternative branch
-@whedon generate pdf from branch custom-branch-name
+@med-oc generate pdf from branch custom-branch-name
 
 # Remind an author or reviewer to return to a review after a
 # certain period of time (supported units days and weeks)
-@whedon remind @reviewer in 2 weeks
+@med-oc remind @reviewer in 2 weeks
 
-# Ask Whedon to do a dry run of accepting the paper and depositing with Crossref
-@whedon recommend-accept
+# Ask med-oc to do a dry run of accepting the paper and depositing with Crossref
+@med-oc recommend-accept
 
-# Ask Whedon to check the references for missing DOIs
-@whedon check references
+# Ask med-oc to check the references for missing DOIs
+@med-oc check references
 
-# Ask Whedon to check repository statistics for the submitted software
-@whedon check repository
+# Ask med-oc to check repository statistics for the submitted software
+@med-oc check repository
 
 EiC TASKS
 
 # Invite an editor to edit a submission (sending them an email)
-@whedon invite @editor as editor
+@med-oc invite @editor as editor
 
 # Reject a paper
-@whedon reject
+@med-oc reject
 
 # Withdraw a paper
-@whedon withdraw
+@med-oc withdraw
 
-# Ask Whedon to actually accept the paper and deposit with Crossref
-@whedon accept deposit=true
+# Ask med-oc to actually accept the paper and deposit with Crossref
+@med-oc accept deposit=true
 
 ```

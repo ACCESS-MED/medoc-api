@@ -1,15 +1,16 @@
 journals:
-  - openjournals/joss-reviews-testing:
-      editor_team_id: 2009411
+  - ACCESS-MED/med-reviews-testing:
+      editor_team_id: 7184180
       eics:
-        - arfon
-      papers: openjournals/joss-papers-testing
-      reviewers: https://bit.ly/joss-reviewers
-      reviewers_signup: http://joss.theoj.org/reviewer-signup.html
-      site_host: http://joss.theoj.org
-      doi_prefix: "10.21105"
-      journal_alias: joss
-      journal_launch_date: '2016-05-05'
-      site_name: Journal of Open Source Software
-      donate_url: https://www.flipcause.com/secure/cause_pdetails/Mjk3Nzk=
-      site_api_key: <%= ENV['JOSS_API_KEY'] %>
+        - rbeucher
+      papers: ACCESS-MED/med-recipes-testing
+      reviewers: https://bit.ly/2XC2Z9e
+      reviewers_signup: https://medportal.herokuapp.com/reviewer-signup.html
+      site_host: https://medportal.herokuapp.com
+      doi_prefix: "10.0000"
+      journal_alias: access-med
+      journal_launch_date: '2023-01-01'
+      journal_issn: '0000-0000'
+      site_name: ACCESS MED-Portal
+      donate_url: https://numfocus.org/donate-to-joss
+      site_api_key: <%= ENV['MEDOC_API_KEY'] %>

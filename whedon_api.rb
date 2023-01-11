@@ -236,7 +236,7 @@ class WhedonApi < Sinatra::Base
 
   def invite_editor(editor)
     editor_handle = editor.gsub(/^\@/, "").strip
-    url = "#{@config.site_host}/papers/api_editor_invite?id=#{@issue_id}&editor=#{editor_handle}&secret=#{@config.site_api_key}"
+    url = "#{@config.site_host}/models/api_editor_invite?id=#{@issue_id}&editor=#{editor_handle}&secret=#{@config.site_api_key}"
     response = RestClient.post(url, "")
 
     if response.code == 204
@@ -247,7 +247,7 @@ class WhedonApi < Sinatra::Base
   end
 
   def reject_paper
-    url = "#{@config.site_host}/papers/api_reject?id=#{@issue_id}&secret=#{@config.site_api_key}"
+    url = "#{@config.site_host}/models/api_reject?id=#{@issue_id}&secret=#{@config.site_api_key}"
     response = RestClient.post(url, "")
 
     if response.code == 204
@@ -260,7 +260,7 @@ class WhedonApi < Sinatra::Base
   end
 
   def withdraw_paper
-    url = "#{@config.site_host}/papers/api_withdraw?id=#{@issue_id}&secret=#{@config.site_api_key}"
+    url = "#{@config.site_host}/models/api_withdraw?id=#{@issue_id}&secret=#{@config.site_api_key}"
     response = RestClient.post(url, "")
 
     if response.code == 204
@@ -407,7 +407,7 @@ class WhedonApi < Sinatra::Base
     # This line updates the GitHub issue with the new editor
     github_client.update_issue(@nwo, @issue_id, issue.title, new_body, :assignees => [])
 
-    url = "#{@config.site_host}/papers/api_assign_editor?id=#{@issue_id}&editor=#{new_editor}&secret=#{@config.site_api_key}"
+    url = "#{@config.site_host}/models/api_assign_editor?id=#{@issue_id}&editor=#{new_editor}&secret=#{@config.site_api_key}"
     response = RestClient.post(url, "")
 
     reviewer_logins = reviewers.map { |reviewer_name| reviewer_name.sub(/^@/, "") }
@@ -497,7 +497,7 @@ class WhedonApi < Sinatra::Base
     end
 
     reviewer_logins = reviewers.map { |reviewer_name| reviewer_name.sub(/^@/, "") }
-    url = "#{@config.site_host}/papers/api_start_review?id=#{@issue_id}&editor=#{editor}&reviewers=#{reviewer_logins.join(',')}&secret=#{@config.site_api_key}"
+    url = "#{@config.site_host}/models/api_start_review?id=#{@issue_id}&editor=#{editor}&reviewers=#{reviewer_logins.join(',')}&secret=#{@config.site_api_key}"
     # TODO let's do some error handling here please
     response = RestClient.post(url, "")
     paper = JSON.parse(response)
