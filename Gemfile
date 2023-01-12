@@ -16,6 +16,7 @@ gem 'sinatra-contrib', '2.0.2'
 gem 'twitter'
 gem 'unicorn'
 gem 'pry-byebug'
+gem 'rexml'
 gem 'whedon', :git => 'https://github.com/ACCESS-MED/medoc.git', :branch => 'master'
 
 group :test do

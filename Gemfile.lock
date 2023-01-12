@@ -226,6 +226,7 @@ DEPENDENCIES
   rack (>= 2.0.6)
   rack-test
   rest-client (~> 2.0)
+  rexml
   rspec
   serrano
   sidekiq
