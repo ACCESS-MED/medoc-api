@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/ACCESS-MED/medoc.git
-  revision: ca417d169c382b02ee5dc858e6651aa080c5c40a
-  ref: ca417d169c382b02ee5dc858e6651aa080c5c40a
+  revision: 2398c8de7a8b1d543793fefb9a761838ab32c146
+  branch: master
   specs:
     whedon (0.1.0)
       bibtex-ruby (~> 6.0.0)
