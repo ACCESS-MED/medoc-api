@@ -37,7 +37,7 @@
     },
     "REDIS_PROVIDER": {
       "description": "The expected REDIS environment variable name for Sidekiq (don't modify this)",
-      "value": "REDISTOGO_URL"
+      "value": "REDIS_URL"
     },
     "CROSSREF_USERNAME": {
       "description": "The username for depositing with Crossref"
@@ -59,7 +59,7 @@
       "size": "hobby"
     }
   },
-  "addons": [ "redistogo:nano"],
+  "addons": [ "heroku-redis:mini"],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
